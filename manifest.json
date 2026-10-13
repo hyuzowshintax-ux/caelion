@@ -1,0 +1,36 @@
+﻿{
+  "name": "Cae1ioN TEAM",
+  "short_name": "Cae1ioN",
+  "description": "Komunitas Esports Indonesia — Roster, Shop & Komunitas",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0d0c0a",
+  "theme_color": "#ff5d20",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["sports", "entertainment", "social"],
+  "shortcuts": [
+    {
+      "name": "Roster Tim",
+      "short_name": "Roster",
+      "description": "Lihat roster Cae1ioN",
+      "url": "/teams.html",
+      "icons": [{ "src": "assets/img/favicon.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Komunitas",
+      "short_name": "Komunitas",
+      "description": "Gabung komunitas Cae1ioN",
+      "url": "/community.html",
+      "icons": [{ "src": "assets/img/favicon.svg", "sizes": "192x192" }]
+    }
+  ]
+}
+

@@ -1,0 +1,16 @@
+﻿User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cae1ion.team/sitemap.xml
+
+# Disallow admin/private areas
+Disallow: /admin/
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /assets/img/
+Disallow: /sw.js
+Disallow: /manifest.json
+
+# Crawl-delay (optional, be nice to server)
+Crawl-delay: 10
