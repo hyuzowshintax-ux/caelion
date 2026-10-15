@@ -11,6 +11,7 @@ const STATIC_ASSETS = [
   '/assets/css/style.css',
   '/assets/js/main.js',
   '/assets/fonts/SuperChips.ttf',
+  '/assets/fonts/DelRose.ttf',
   '/assets/img/logo-C1N.svg',
   '/assets/img/logo-C1N-trans.png',
   '/assets/img/favicon.svg',

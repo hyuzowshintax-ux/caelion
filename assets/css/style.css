@@ -19,6 +19,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Del Rose";
+  src: url("../fonts/DelRose.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Tema: Ember Caelion — hitam hangat + aksen api (default) */
   --bg: #0d0c0a;
@@ -189,11 +197,11 @@ h1, h2, h3, h4, .head {
 .footer .logo img { height: 96px; }
 .logo svg { width: 38px; height: 38px; flex: none; }
 .logo-text {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 22px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  font-family: "Del Rose", var(--font-head);
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 0.06em;
+  text-transform: none;
   color: #f7f1e3;
 }
 .logo-text span { color: var(--accent); }
@@ -2040,7 +2048,7 @@ html.dark .drop a:hover { background: rgba(255,93,32,.14); }
 .btn:hover { background: #ff7340; box-shadow: 0 14px 32px rgba(255, 93, 32, 0.45); }
 .btn-ghost { background: rgba(255, 93, 32, 0.08); backdrop-filter: blur(8px); }
 .logo img, .page-orca { filter: invert(1); }
-.aurora-title { color: #f7f1e3; filter: drop-shadow(0 0 22px rgba(255, 93, 32, 0.35)); font-size: clamp(3.2rem, 11vw, 8rem) !important; line-height: 1.02 !important; }
+.aurora-title { font-family: "Del Rose", var(--font-display); color: #f7f1e3; filter: drop-shadow(0 0 22px rgba(255, 93, 32, 0.35)); font-size: clamp(3.2rem, 11vw, 8rem) !important; line-height: 1.02 !important; }
 .aurora-bg { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
 .orb { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .55; animation: orbDrift 14s ease-in-out infinite alternate; }
 .o1 { width: 480px; height: 480px; left: -120px; top: -120px; background: radial-gradient(circle, rgba(255,93,32,.30), transparent 70%); }
