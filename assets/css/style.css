@@ -2128,3 +2128,6 @@ html.light .sponsor { color: #55555f; }
 html.light .aurora-title { color: var(--text); filter: drop-shadow(0 0 18px rgba(255, 93, 32, 0.25)); }
 
 
+
+.font-caelion { font-family: "Del Rose", cursive; text-transform: none !important; letter-spacing: .02em; }
+

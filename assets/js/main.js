@@ -381,6 +381,32 @@
     });
   });
 
+  /* ---------- Bungkus semua tulisan Cae1ioN dengan font Del Rose ---------- */
+  (function () {
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(n) {
+        if (!/Cae1ioN/.test(n.nodeValue || "")) return NodeFilter.FILTER_REJECT;
+        const p = n.parentElement;
+        if (!p || /^(SCRIPT|STYLE)$/.test(p.tagName)) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((n) => {
+      const wrap = document.createDocumentFragment();
+      n.nodeValue.split(/(Cae1ioN)/g).forEach((part) => {
+        if (part === "Cae1ioN") {
+          const s = document.createElement("span");
+          s.className = "font-caelion";
+          s.textContent = part;
+          wrap.appendChild(s);
+        } else if (part) wrap.appendChild(document.createTextNode(part));
+      });
+      n.parentNode.replaceChild(wrap, n);
+    });
+  })();
+
   /* Expose for debugging */
   window.Cae1ioNUtils = { Toast, ShareUtil, POTW, Referral };
 })();
